@@ -1,0 +1,2 @@
+- Optimistic updates
+- auto refetch on reconnect

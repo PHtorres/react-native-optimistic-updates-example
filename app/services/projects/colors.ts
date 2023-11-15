@@ -42,3 +42,11 @@ export const projectColors: IProjectColor[] = [
     hex: '#b8b8b8',
   },
 ];
+
+export const getColorHexByColorName = (colorName: string) => {
+  const color = projectColors.find(i => i.name === colorName);
+  if (color) {
+    return color.hex;
+  }
+  return projectColors[0].hex;
+};
