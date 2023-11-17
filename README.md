@@ -1,10 +1,3 @@
-- Optimistic updates
-- auto refetch on reconnect
-
-
-Certainly! Here's an example of a README file for a React Native project:
-
-
 # Optimistic Updates with React Native
 
 This repository brings some examples of how we can apply **Optimistic Updates** technique
