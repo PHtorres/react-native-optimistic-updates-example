@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 import {useCreateProject} from '../services/projects/commands/useCreateProject';
 import {projectColors} from '../services/projects/colors';

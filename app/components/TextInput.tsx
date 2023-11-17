@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   TextInput as RNTextInput,
   StyleSheet,
@@ -10,9 +9,9 @@ import {fonts} from '../theme/font';
 export const TextInput = (props: TextInputProps) => {
   return (
     <RNTextInput
-      style={[styles.container, {borderColor: colors.border}]}
-      placeholderTextColor={colors.border}
       {...props}
+      placeholderTextColor={colors.border}
+      style={[styles.container, {borderColor: colors.border}, props.style]}
     />
   );
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import {useGetProjects} from '../services/projects/queries/useGetProjects';
 import {ActivityIndicator, FlatList, StyleSheet, View} from 'react-native';
 import {Screen} from '../components/Screen';
@@ -29,7 +28,15 @@ export const ProjectsListScreen = () => {
         columnWrapperStyle={{gap: spacing.md}}
         keyExtractor={item => item.id}
         renderItem={({item}) => (
-          <ProjectCard project={item} onPress={projectId => {}} />
+          <ProjectCard
+            project={item}
+            onPress={project =>
+              navigate('ProjectTasksScreen', {
+                projectId: project.id,
+                projectName: project.name,
+              })
+            }
+          />
         )}
       />
     </Screen>

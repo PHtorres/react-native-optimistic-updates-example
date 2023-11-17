@@ -3,5 +3,6 @@ export const colors = {
   body: '#1B1B1D',
   border: '#E0E0E0',
   background: '#ffffff',
-  danger:'#ab4141'
+  contrastBackground: '#F1F5F9',
+  danger: '#ab4141',
 };

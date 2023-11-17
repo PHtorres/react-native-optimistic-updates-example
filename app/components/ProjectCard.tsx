@@ -1,4 +1,4 @@
-import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import {IProject} from '../services/api/todoist/interfaces/project';
 import {colors} from '../theme/colors';
 import {spacing} from '../theme/spacing';
@@ -7,13 +7,13 @@ import {getColorHexByColorName} from '../services/projects/colors';
 
 interface ProjectCardProps {
   project: IProject;
-  onPress: (projectId: string) => void;
+  onPress: (project: IProject) => void;
 }
 
 export const ProjectCard = ({project, onPress}: ProjectCardProps) => {
   return (
     <TouchableOpacity
-      onPress={() => onPress(project.id)}
+      onPress={() => onPress(project)}
       style={[
         styles.container,
         {
