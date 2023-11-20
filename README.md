@@ -8,11 +8,9 @@ In an optimistic update, the UI behaves like a change was successfully completed
 
 - [Project Overview](#project-overview)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
