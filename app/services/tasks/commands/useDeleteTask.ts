@@ -4,9 +4,8 @@ import {ITask} from '../../api/todoist/interfaces/task';
 import {tasksRequests} from '../../api/todoist/requests/tasks';
 import {IMutationDeleteTask} from '../interfaces/IMutationDeleteTask';
 
-const queryClient = useQueryClient();
-
 export const useDeleteTask = () => {
+  const queryClient = useQueryClient();
   const {mutateAsync, error} = useMutation({
     mutationFn: ({taskId}: IMutationDeleteTask) =>
       tasksRequests.deleteTask(taskId),

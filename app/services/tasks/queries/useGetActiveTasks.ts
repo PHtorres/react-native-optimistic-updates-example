@@ -7,6 +7,7 @@ export const useGetActiveTasks = (projectId: string) => {
   return useQuery({
     queryKey: tasksQueryKeys.getActiveTasks(projectId),
     queryFn: () => sortedTasksList(tasksRequests.getActiveTasks(projectId)),
+    staleTime: 1000 * 60 * 60, //1hr
   });
 };
 

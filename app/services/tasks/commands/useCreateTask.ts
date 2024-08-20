@@ -4,9 +4,8 @@ import {ICreateTask, ITask} from '../../api/todoist/interfaces/task';
 import {tasksRequests} from '../../api/todoist/requests/tasks';
 import {useState} from 'react';
 
-const queryClient = useQueryClient();
-
 export const useCreateTask = () => {
+  const queryClient = useQueryClient();
   const [taskContent, setTaskContent] = useState('');
 
   const {mutateAsync, error} = useMutation({

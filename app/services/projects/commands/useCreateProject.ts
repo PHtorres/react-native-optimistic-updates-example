@@ -3,9 +3,8 @@ import {projectsQueryKeys} from '../queryKeys';
 import {ICreateProject} from '../../api/todoist/interfaces/project';
 import {projectsRequests} from '../../api/todoist/requests/projects';
 
-const queryClient = useQueryClient();
-
 export const useCreateProject = () => {
+  const queryClient = useQueryClient();
   const mutation = useMutation({
     mutationFn: (data: ICreateProject) => projectsRequests.createProject(data),
     onSuccess: () => {
