@@ -1,4 +1,4 @@
-import {AppStack} from '../../../app/routes/AppStack';
+import {AppStack} from '../../../app/routes/app-stack';
 import {projectsRequests} from '../../../app/services/api/todoist/requests/projects';
 import {render, waitFor, userEvent} from '../../utils/test-utils';
 import {mockProjectsList} from './mocks';

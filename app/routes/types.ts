@@ -1,5 +1,5 @@
 type AppStackParamList = {
-  ProjectsListScreen: undefined;
-  CreateProjectScreen: undefined;
-  ProjectTasksScreen: {projectId: string, projectName:string};
+  Projects: undefined;
+  CreateProject: undefined;
+  Tasks: {projectId: string; projectName: string};
 };
